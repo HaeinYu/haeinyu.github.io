@@ -1,274 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
     <title>Haein&#39;s Portfolio</title>
-    <meta name="description" content="Portfolio for happiest web developer Haein" />
+    <meta
+      name="description"
+      content="Portfolio for happiest web developer Haein"
+    />
     <meta name="autor" content="Haein Yu" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- OG (Open Graph Data) -->
     <meta property="og.title" content="Haein's Portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://haeinyu.github.io/my_site/" />
-    <meta property="og:image" content="https://haeinyu.github.io/my_site/images/og.webp" />
+    <meta
+      property="og:image"
+      content="https://haeinyu.github.io/my_site/images/og.webp"
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Code+Pro&display=swap" 
-        rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
     />
     <!-- Font Awesome -->
-    <script 
-        src="https://kit.fontawesome.com/3331fafb85.js" 
-        crossorigin="anonymous"
+    <script
+      src="https://kit.fontawesome.com/3331fafb85.js"
+      crossorigin="anonymous"
     ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
     <script type="module" src="src/type.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__logo">
-            <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-            <h1 class="header__logo__title"><a href="#">Haein Yu</a></h1>
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#work">My work</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="header__toggle" aria-label="navigation menu toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Haein Yu</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Main -->
     <main>
-        <!-- Home -->
-        <section id="home">
-            <div class="home__container">
-                <img 
-            class="home__avatar" src="images/profile.png" alt="Haein's profile image" 
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="images/profile.png"
+            alt="Haein's profile image"
+          />
+          <h2 class="home__title">
+            Welcome to
+            <strong class="home__title--strong">Haein&#39;s</strong> Wonderland
+          </h2>
+          <p class="home__description">
+            I am a web developer, weaving Dreams into code
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          I am a recent graduate with a Bachelor&#39;s degree in Computer
+          Science from Temple University. During my time in college, I pursued
+          an internship where I worked directly with clients, creating and
+          enhancing various e-commerce websites. I am enthusiastic about
+          learning and have acquired multiple skills, including a keen
+          understanding of design trends, foundational knowledge of HTML and CSS
+          basics, and familiarity with design software such as Adobe PhotoShop,
+          Illustrator, Sketch, and Figma.
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end Developer</p>
+            <p>HTML, CSS, JavaScript, Git, Web APIs</p>
+          </li>
+
+          <li class="major">
+            <i class="fa-solid fa-layer-group major__icon"></i>
+            <p class="major__title">Designer</p>
+            <p>Figma, Font Awesome, Adobe Creative Suite</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-code-branch major__icon"></i>
+            <p class="major__title">Version Control</p>
+            <p>git, GitHub</p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img
+              class="job__img"
+              src="images/experiences/TempleSBDC.png"
+              alt="Temple SBDC logo"
             />
-            <h2 class="home__title">
-                Welcome to 
-                <strong class="home__title--strong">Haein&#39;s</strong> Wonderland </h2>
-            <p class="home__description">I am a web developer, weaving Dreams into code</p>
-            <a class="home__contact" href="#contact">Contact Me</a>
+            <div>
+              <p class="job__name">Web Developer</p>
+              <p class="job__place">Temple Small Business Development Center</p>
+              <p class="job__period">October 2022 - June 2023</p>
             </div>
-        </section>
-        <!-- About -->
-        <section id="about" class="section max-container">
-            <h2 class="title">About me</h2>
-            <p class="description">
-                I am a recent graduate with a Bachelor&#39;s degree in Computer Science from Temple University. 
-                During my time in college, I pursued an internship where I worked directly with clients, creating and enhancing various e-commerce websites. 
-                I am enthusiastic about learning and have acquired multiple skills, including a keen understanding of design trends, 
-                foundational knowledge of HTML and CSS basics, and familiarity with design software such as Adobe PhotoShop, Illustrator, Sketch, and Figma. 
-            </p>
-            <ul class="majors">
-                <li class="major">
-                    <i class="fa-brands fa-html5 major__icon"></i>
-                    <p class="major__title">Front-end Developer</p>
-                    <p>HTML, CSS, JavaScript, Git, Web APIs</p>
-                </li>
-                
-                <li class="major">
-                    <i class="fa-solid fa-layer-group major__icon"></i>
-                    <p class="major__title">Designer</p>
-                    <p>Figma, Font Awesome, Adobe Creative Suite</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-code-branch major__icon"></i>
-                    <p class="major__title">Version Control</p>
-                    <p>git, GitHub</p>
-                </li>
-            </ul>
-            <ul class="jobs">
-                <li class="job">
-                    <img class="job__img" src="images/experiences/TempleSBDC.png" alt="Temple SBDC logo">
-                    <div>
-                    <p class="job__name">Web Developer</p>
-                    <p class="job__place">Temple Small Business Development Center</p>
-                    <p class="job__period">October 2022 - June 2023</p>
-                    </div>
-                </li>
-                <li class="job">
-                    <img class="job__img" src="images/experiences/TempleCST.png" alt="Temple CST logo">
-                    <div>
-                    <p class="job__name">Computer Lab Consultant</p>
-                    <p class="job__place">Temple University Science Education and Research Center</p>
-                    <p class="job__period">August 2021 - May 2023</p>
-                    </div>
-                </li>
-                <li class="job">
-                    <img class="job__img" src="images/experiences/TempleTECHCenter.png" alt="Temple TECH Center logo">
-                    <div>
-                    <p class="job__name">Student Technical Consultant</p>
-                    <p class="job__place">Temple University TECH Center</p>
-                    <p class="job__period">August 2021 - May 2023</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="max-container">
-                <h2 class="title">My Skills</h2>
-            <p class="description">Skills & Attrtibutes</p>
-            <p>Passion for learning new technologies. Capable of working within a team enviornment and independently.
-                Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.
-            </p>
-            <div class="skills">
-                <section class="skills__coding">
-                    <h3 class="skills__title">Coding Skills</h3>
-                    <ul>
-                        <li class="bar">
-                            <div class="barr__metadata"><span>HTML</span><span>98%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="barr__metadata"><span>CSS</span><span>90%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="barr__metadata"><span>JavaScript</span><span>90%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-                        </li>
-                        <li class="bar">
-                            <div class="barr__metadata"><span>Java</span><span>90%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="skills__tools">
-                    <h3 class="skills__title">Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>IntelliJ</li>
-                        <li>Android Studio Code</li>
-                        <li>Adobe Creative Suite</li>
-                    </ul>
-                </section>
-                <section class="skills__etc">
-                    <h3 class="skills__title">Etc</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>Math</li>
-                    </ul>
-                </section>
+          </li>
+          <li class="job">
+            <img
+              class="job__img"
+              src="images/experiences/TempleCST.png"
+              alt="Temple CST logo"
+            />
+            <div>
+              <p class="job__name">Computer Lab Consultant</p>
+              <p class="job__place">
+                Temple University Science Education and Research Center
+              </p>
+              <p class="job__period">August 2021 - May 2023</p>
             </div>
+          </li>
+          <li class="job">
+            <img
+              class="job__img"
+              src="images/experiences/TempleTECHCenter.png"
+              alt="Temple TECH Center logo"
+            />
+            <div>
+              <p class="job__name">Student Technical Consultant</p>
+              <p class="job__place">Temple University TECH Center</p>
+              <p class="job__period">August 2021 - May 2023</p>
             </div>
-        </section>
-        <!-- Work -->
-        <section id="work" class="section">
-            <div class="max-container">
-                <h2 class="title">My work</h2>
-            <p class="description">Projects</p>
-            <ul class="categories">
-                <li>
-                    <button class="category category--selected" data-category="all">
-                        All <span class="category__count">4</span>
-                    </button>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attrtibutes</p>
+          <p>
+            Passion for learning new technologies. Capable of working within a
+            team enviornment and independently. Ability to plan and time
+            schedule, work under strict time pressure and adapt quickly when
+            needed.
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="barr__metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
                 </li>
-                <li>
-                    <button class="category" data-category="web-development">
-                        Web Development <span class="category__count">3</span>
-                    </button>
+                <li class="bar">
+                  <div class="barr__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
                 </li>
-                <li>
-                    <button class="category" data-category="mobile">
-                        Mobile <span class="category__count">1</span>
-                    </button>
+                <li class="bar">
+                  <div class="barr__metadata">
+                    <span>JavaScript</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
                 </li>
-            </ul>
-            <ul class="projects">
-                <li class="project" data-type="web-development">
-                    <a href="https://affinitycleanz.com/" target="_blank">
-                    <img src="images/portfolios/project1.webp" alt="project1" class="project__img">
-                    <div class="project__metadata">
-                        <h3 class="project__title">'Affinity Cleanz' Website</h3>
-                        <p>Redesign & SEO Enhancement</p>
-                    </div>
-                    </a>
+                <li class="bar">
+                  <div class="barr__metadata">
+                    <span>Java</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
                 </li>
-                <li class="project" data-type="web-development">
-                    <a href="https://www.exploreeverywhere.com/" target="_blank">
-                    <img src="images/portfolios/project2.webp" alt="project2" class="project__img">
-                    <div class="project__metadata">
-                        <h3 class="project__title">'All Around This World' Website</h3>
-                        <p>Creating a brand new Website & SEO Enhancement</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="project" data-type="web-development">
-                    <a href="https://elementarymydearmd.com/" target="_blank">
-                    <img src="images/portfolios/project3.webp" alt="project3" class="project__img">
-                    <div class="project__metadata">
-                        <h3 class="project__title">'Elementary My Dear Executive Enterprises LLC' Website</h3>
-                        <p>Redesign & SEO Enhancement</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="project" data-type="mobile">
-                    <a href="https://github.com/CIS3296SoftwareDesignF21/prj-05-to_do_list" target="_blank">
-                    <img src="images/portfolios/project4.webp" alt="project4" class="project__img">
-                    <div class="project__metadata">
-                        <h3 class="project__title">'To-Do List' Application</h3>
-                        <p>A project of creating an Android Applicatioin</p>
-                    </div>
-                    </a>
-                </li>
-            </ul>
-            </div>
-        </section>
-        <!-- Arrow up -->
-        <aside>
-            <a class="arrow-up" href="#home" title="back to top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-        </aside>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Android Studio Code</li>
+                <li>Adobe Creative Suite</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="web-development">
+                Web Development <span class="category__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="mobile">
+                Mobile <span class="category__count">1</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="web-development">
+              <a href="https://affinitycleanz.com/" target="_blank">
+                <img
+                  src="images/portfolios/project1.webp"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">'Affinity Cleanz' Website</h3>
+                  <p>E-commerce website for a cleaning company</p>
+                  <p>Redesign & SEO Enhancement</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="web-development">
+              <a href="https://www.exploreeverywhere.com/" target="_blank">
+                <img
+                  src="images/portfolios/project2.webp"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    'All Around This World' Website
+                  </h3>
+                  <p>E-commerce website for a music education company</p>
+                  <p>Creating a brand new Website & SEO Enhancement</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="web-development">
+              <a
+                href="https://zippy-maamoul-b56273.netlify.app"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolios/project3.webp"
+                  alt="project3"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    'Todo Flight: Turning Plans into Reality' Application
+                  </h3>
+                  <p>Personal project</p>
+                  <p>A Todo Application written with React.js</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="web-development">
+              <a href="https://elementarymydearmd.com/" target="_blank">
+                <img
+                  src="images/portfolios/project4.webp"
+                  alt="project4"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    'Elementary My Dear Executive Enterprises LLC' Website
+                  </h3>
+                  <p>E-commerce website for a medical company</p>
+                  <p>Redesign & SEO Enhancement</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a
+                href="https://github.com/CIS3296SoftwareDesignF21/prj-05-to_do_list"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolios/project5.webp"
+                  alt="project5"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">'To-Do List' Application</h3>
+                  <p>A project of creating an Android Applicatioin</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
-        <div class="max-container">
-            <h2 class="title">Let&#39;s talk</h2>
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
         <p class="description">jessyyu5656@gmail.com</p>
         <ul class="contact__links">
-            <li>
-                <a
-                class="contact__link"
-                href="https://www.linkedin.com/in/haein-yu/" 
-                target="_blank" 
-                title="my Linkedin link">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a
-                class="contact__link"
-                href="https://github.com/HaeinYu" 
-                target="_blank" 
-                title="my GitHub link">
-                <i class="fa-brands fa-square-github"></i>
-                </a>
-            </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/haein-yu/"
+              target="_blank"
+              title="my Linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/HaeinYu"
+              target="_blank"
+              title="my GitHub link"
+            >
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
         </ul>
-        <p>©Haein Yu -  All right reserved</p>
-        </div>
+        <p>©Haein Yu - All right reserved</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
